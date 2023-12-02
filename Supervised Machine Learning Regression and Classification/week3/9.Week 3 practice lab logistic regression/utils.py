@@ -30,6 +30,7 @@ def plot_data(X, y, pos_label="y=1", neg_label="y=0"):
     negative = y == 0
     
     # Plot examples
+    # This used a mask to plot only positive examples
     plt.plot(X[positive, 0], X[positive, 1], 'k+', label=pos_label)
     plt.plot(X[negative, 0], X[negative, 1], 'yo', label=neg_label)
     
